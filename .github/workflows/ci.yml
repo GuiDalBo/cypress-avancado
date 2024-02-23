@@ -2,7 +2,7 @@ name: End-to-end tests 🧪
 on:
   push:
   schedule:
-    - cron: '25 * * * *'
+    - cron: '30/5 * * * *'
 
 jobs:
   cypress-run:
