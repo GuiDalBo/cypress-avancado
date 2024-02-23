@@ -2,29 +2,17 @@
 
 👋 Seja bem vindo(a)!
 
-É muito bom tê-lo(a) aqui. Tenho certeza que você vai adorar este curso. ❤️
+Como profissional de qualidade de software e buscando sempre aprimorar meus 
+conhecimentos disponibilizo nesse repositório o que fiz acompanhnado o curso da Escola TAT
 
-## O que você vai aprender
+Nesse curso utilizei uma aplicação produzida por Walmir para realizar testes e2e com chamadas a uma API e também com 
+dados mockados que podem agilizar a execução dos testes e testar a parte do front-end independente da API
 
-Durante o curso avançado de Cypress, você vai aprender:
 
-- Como criar testes 100% _flakiness-free_
-- Como interagir com a aplicação o mais próximo de como um usuário real faria
-  - Como esperar por um elemento estar visível antes de interagir com ele
-  - Como simular o uso do teclado em vez de clique em botão em funcionalidades de busca
-  - Como esperar por requisições HTTP antes de seguir em frente com os testes
-- Como organizar diferentes testes em seus específicos contextos
-- Como ler o `localStorage` do navegador
-- Como tornar seletores de elementos mais específicos
-- Como simplificar comandos repetitivos
-- Como interceptar e mockar uma API externa para testar o frontend independente do backend
-- Como simular erros no servidor e na rede
-- Como simular lentidão na chamada à uma API
-- Como modificar o relatório de testes padrão para um que combine com o seu estilo 😉
+Além do que foi ensinado nesse curso também apliquei outros conhecimentos para integra-los a esse repositório.
+Caso tenha mais interesse no meu trabalho estou sempre disponível no LinkedIn
 
-## Vamos começar?
-
-Vá para a seção de [pré-requisitos](./lessons/0.md).
+https://www.linkedin.com/in/guilherme-dal-bo/
 
 ___
 

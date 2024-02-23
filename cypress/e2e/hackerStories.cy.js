@@ -4,13 +4,28 @@ describe('Hacker Stories', () => {
 
   context('Hitting the real API', () => {
     beforeEach(() => {
-      cy.getStories()
+      cy.intercept({
+        method: 'GET',
+        pathname: '**/search',
+        query: {
+          query: initialTerm,
+          page: '0'
+        }
+      }).as('getStories')
+
       cy.visit('/')
-      cy.wait('@getSories1')
+      cy.wait('@getStories')
     })
 
-    it.only('shows 20 stories, then the next 20 after clicking "More"', () => {
-      cy.getNextStories()
+    it('shows 20 stories, then the next 20 after clicking "More"', () => {
+      cy.intercept({
+        method: 'GET',
+        pathname: '**/search',
+        query: {
+          query: initialTerm,
+          page: '1'
+        }
+      }).as('getNextStories')
 
       cy.get('.item').should('have.length', 20)
 
@@ -18,7 +33,7 @@ describe('Hacker Stories', () => {
         .should('be.visible')
         .click()
 
-      
+      cy.wait('@getNextStories')
 
       cy.get('.item').should('have.length', 40)
     })
