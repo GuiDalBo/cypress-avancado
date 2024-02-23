@@ -8,8 +8,5 @@ jobs:
         uses: actions/checkout@v4
       # Install NPM dependencies, cache them correctly
       # and run all Cypress tests
-      - name: cypress run --reporter nyan
+      - name: cypress run
         uses: cypress-io/github-action@v6
-        with:
-          build: npm run build
-          start: npm start
