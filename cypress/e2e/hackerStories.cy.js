@@ -38,6 +38,19 @@ describe('Hacker Stories', () => {
       cy.get('.item').should('have.length', 40)
     })
 
+    Cypress._.times(500, () => {
+    it.only('shows 20 stories, then the next 20 after clicking "More"', () => {
+
+      cy.get('.item').should('have.length', 20)
+
+      cy.contains('More').click()
+
+      cy.assertLoadingIsShownAndHidden()
+
+      cy.get('.item').should('have.length', 40)
+    })
+  })
+
     it('searches via the last searched term', () => {
       cy.intercept(
         'GET',
