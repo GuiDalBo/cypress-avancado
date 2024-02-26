@@ -13,7 +13,7 @@ describe('Hacker Stories', () => {
         }
       }).as('getStories')
 
-      cy.visit('/')
+      cy.visit('escolapoty.com.br')
       cy.wait('@getStories')
     })
 
