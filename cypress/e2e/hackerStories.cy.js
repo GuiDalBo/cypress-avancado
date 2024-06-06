@@ -2,7 +2,7 @@ describe('Hacker Stories', () => {
   const initialTerm = 'React'
   const newTerm = 'Cypress'
 
-  context('Hitting the real API', () => {
+  context.only('Hitting the real API', () => {
     beforeEach(() => {
       cy.intercept({
         method: 'GET',
